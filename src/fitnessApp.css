@@ -1,0 +1,198 @@
+body {
+    font-family: 'Josefin Sans';
+    background-color: #08081a;
+  }
+  
+  * {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+  
+  }
+  
+  ::-webkit-scrollbar {
+    width: 0px;
+  }
+
+
+  .right-arrow,
+  .left-arrow {
+    cursor: pointer;
+    background: #4db5ff;
+    outline: none;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 700;
+    padding: 0.5rem;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -20px;
+    right: 80px;
+    transform: scale(1, 1);
+    transition: 0.3s all ease-in-out;
+    color: #fff;
+  }
+  
+  .right-arrow {
+    right: 140px;
+  }
+  
+  .right-arrow:hover,
+  .left-arrow:hover {
+    transform: scale(1.2, 1.2);
+  }
+  
+  .react-horizontal-scrolling-menu--wrapper {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .detail-image {
+    width: 729px;
+    height: 742px;
+  }
+  
+  .hero-banner-img {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 700px;
+    height: 900px;
+
+  
+  }
+
+  video {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+  }
+  .exercise-card {
+    width: 400px;
+    height: 445px;
+    background: #03030e;
+    border-top: 4px solid #4db5ff;
+    border-bottom-left-radius: 20px;
+
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-bottom: 10px;
+    transform: scale(1, 1);
+    transition: 0.3s all ease-in-out;
+  }
+  
+  .exercise-card img {
+    height: 290px;
+
+  }
+  
+  .bodyPart-card {
+    transform: scale(1, 1);
+    transition: 0.3s all ease-in-out;
+  }
+  
+  .exercise-card:hover,
+  .bodyPart-card:hover {
+    transform: scale(1.1, 1.1);
+  }
+  
+  .search-btn:hover {
+    color: #4db5ff ;
+    background-color: #1f1f38 !important;
+    border: 1px solid #4db5ff ;
+  }
+  
+  .exercise-video {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 387px;
+    height: 381px;
+    text-decoration: none;
+  }
+
+  @media screen and (max-width:1536px) {
+    .videoC {
+      width: 1536px;
+      height: 1200px;
+    }
+  }
+
+  .display {
+    display: none;
+  }
+  
+  @media screen and (max-width:1200px) {
+    .detail-image {
+      width: 300px;
+      height: 300px;
+    }
+  
+
+    .imgC{
+      width: 700px;
+    }
+    .videoC {
+      width: 1200px;
+      height: 900px;
+    }
+  
+    .hero-banner-img {
+      display: none;
+    }
+  
+    .exercise-card {
+      width: 320px;
+    }
+  
+    .exercise-video {
+      width: 320px;
+      height: 300px;
+    }
+  
+  }
+
+  @media screen and (max-width:800px) {
+    .imgC{
+      width: 500px;
+    }
+    .videoC {
+      width: 800px;
+      height: 600px;
+    }
+    .text-nav {
+      font-size: 24px;
+    }
+  }
+
+  @media screen and (max-width:500px) {
+    .imgC{
+      width: 300px;
+    }
+  }
+  
+  @media screen and (max-width:400px) {
+    .exercise-card {
+      width: 280px;
+    }
+    .imgC{
+      width: 280px;
+    }
+    .videoC {
+      width: 400px;
+      height: 400px;
+    }
+    .text-nav {
+      font-size: 18px;
+    }
+  }
